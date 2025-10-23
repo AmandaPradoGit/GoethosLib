@@ -1,4 +1,5 @@
 const header = document.createElement('header');
+header.className = 'fixed top-0 left-0 w-full z-50 bg-white'; 
 header.innerHTML = `
   <div class="font-mono p-4 md:p-6 shadow-md">
     <div class="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
