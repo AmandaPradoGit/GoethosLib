@@ -1,11 +1,11 @@
 const tabcontrol = document.createElement('div');
 tabcontrol.innerHTML = `
     <div class="tab-control w-full mx-auto px-16">
-            <button class="tab-btn text-yellow-500 border-b-2 border-yellow-500 font-bold py-2 text-sm">Na Estante</button>
-            <button class="tab-btn text-gray-600 font-medium py-2 text-sm">Lidos</button>
-            <button class="tab-btn text-gray-600 font-medium py-2 text-sm">Lendo</button>
-            <button class="tab-btn text-gray-600 font-medium py-2 text-sm">Abandonados</button>
-            <button class="tab-btn text-gray-600 font-medium py-2 text-sm">Quero ler</button>
+            <button class="tab-btn mr-4 text-yellow-500 border-b-2 border-yellow-500 font-bold py-2 text-sm">Na Estante</button>
+            <button class="tab-btn mr-4 text-gray-600 font-medium py-2 text-sm">Lidos</button>
+            <button class="tab-btn mr-4 text-gray-600 font-medium py-2 text-sm">Lendo</button>
+            <button class="tab-btn mr-4 text-gray-600 font-medium py-2 text-sm">Abandonados</button>
+            <button class="tab-btn mr-4 text-gray-600 font-medium py-2 text-sm">Quero ler</button>
 
         </div>
           <div class="tab-content mt-4">
