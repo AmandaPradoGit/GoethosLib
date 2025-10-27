@@ -23,4 +23,8 @@ header.innerHTML = `
       
     </div>
   </div>`;
+
+  document.addEventListener('DOMContentLoaded', () => {
+  document.body.prepend(header);
+});
 export default header;
