@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goethos - Livro</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen font-sans">
+
+  <header id="header"></header>
+
+  <main class="flex justify-center items-center py-48">
+    <div class="flex bg-white shadow-md rounded-2xl p-8 max-w-4xl w-full mx-6 border border-gray-100">
+      
+      <div class="w-40 flex-shrink-0">
+        <img src="imgs/bookexample.png" alt="O Processo" class="rounded-lg shadow-md w-full">
+      </div>
+
+      <div class="ml-8 flex flex-col justify-between">
+        <div>
+          <h2 class="text-lg font-semibold italic">Descrição</h2>
+          <p class="text-sm mt-2 text-gray-700 leading-relaxed max-w-lg">
+            Franz KafkaFranz KafkaFranz KafkaFranz KafkaFranz KafkaFranz KafkaFranz KafkaFranz KafkaFranz KafkaFranz KafkaFranz KafkaFranz KafkaFranz KafkaFranz KafkaFranz Kafka
+          </p>
+        </div>
+
+        <div class="mt-6 flex flex-wrap gap-3">
+          <button class="bg-yellow-300 hover:bg-yellow-400 text-gray-800 font-medium px-5 py-1.5 rounded-full transition">Tenho</button>
+          <button class="bg-gray-400 hover:bg-gray-500 text-white font-medium px-5 py-1.5 rounded-full transition">Lendo</button>
+          <button class="bg-black hover:bg-gray-900 text-white font-medium px-5 py-1.5 rounded-full transition">Lido</button>
+          <button class="bg-yellow-200 hover:bg-yellow-300 text-gray-800 font-medium px-5 py-1.5 rounded-full transition">Quero ler</button>
+        </div>
+
+        <div class="mt-6">
+          <h3 class="text-lg font-semibold italic">O Processo</h3>
+          <p class="text-md text-gray-700 italic">Franz Kafka</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="header.js"></script>
+</body>
+</html>
