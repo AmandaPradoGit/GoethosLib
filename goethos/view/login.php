@@ -1,3 +1,9 @@
+<?php 
+session_start();
+$error = $_SESSION['register_error'] ?? null;
+$sucess = $_SESSION['register_success'] ?? null;
+unset($_SESSION['register_error'], $_SESSION['register_sucess']);
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -17,7 +23,7 @@
     <div class="flex items-center justify-center min-h-screen">
         <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
             <div class="flex justify-between items-center text-3xl">
-                <h1>Registrar</h1>
+                <h1>Entrar</h1>
                 <img src="/view/imgs/icon.png" alt="icon" class="w-24 h-20 md:w-32 md:h-28" />
             </div>
             <div>
@@ -25,13 +31,12 @@
                 <input type="text" class="w-full px-4 py-2 mb-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-yellow-400"/>
                 <label for="password" class="block mb-2 text-sm font-medium">Senha:</label>
                 <input type="password" class="w-full px-4 py-2 mb-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-yellow-400"/>
-                <label for="password" class="block mb-2 text-sm font-medium">Corfimar Senha:</label>
-                <input type="password" class="w-full px-4 py-2 mb-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-yellow-400"/>
                 <button class="w-full bg-black hover:bg-yellow-500 text-white font-bold py-2 px-4 rounded transition duration-300"
-                  onclick="window.location.href='home.html'">Registrar</button>
+                  onclick="window.location.href='home.html'">Entrar</button>
             </div>
             <div class="flex items-center justify-between mt-6 ">
-                <a href="login.html" class="block underline text-sm">Já possuo uma conta</a>
+                <a href="#" class="block underline text-sm">Esqueci minha senha</a>
+                <a href="/view/register.html" class="block underline text-sm">Criar uma conta</a>
             </div>
             </div>    
         </div>
