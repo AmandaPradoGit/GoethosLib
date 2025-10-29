@@ -12,7 +12,7 @@ header.innerHTML = `
       <div class="flex items-center border border-black rounded-full px-4 py-2 h-10 md:h-7 w-full md:w-80">
         <input type="text" class="w-full outline-none text-sm text-gray-700 bg-transparent" />
         <button>
-          <img src="/view/imgs/search.png" alt="Ícone de envio" class="w-5 h-5" />
+          <img src="/view/imgs/search.png" alt="search icon" class="w-5 h-5" />
         </button>
       </div>
       
@@ -23,6 +23,33 @@ header.innerHTML = `
       
     </div>
   </div>`;
+
+  document.addEventListener('DOMContentLoaded', () => {
+  document.body.prepend(header);
+
+  const profilePic = header.querySelector('img[alt="Perfil"]');
+  if (profilePic) {
+    profilePic.style.cursor = 'pointer'; 
+    profilePic.addEventListener('click', () => {
+      window.location.href = 'profile.html';
+    });
+  }
+
+ const icon = header.querySelector('img[alt="icon"]');
+  if (icon) {
+    icon.style.cursor = 'pointer';
+    icon.addEventListener('click', () => {
+      window.location.href = 'home.html';
+    });
+  }
+  const search = header.querySelector('img[alt="search icon"]');
+  if (icon) {
+    search.style.cursor = 'pointer';
+    search.addEventListener('click', () => {
+      window.location.href = 'search.html';
+    });
+  }
+});
 
   document.addEventListener('DOMContentLoaded', () => {
   document.body.prepend(header);
