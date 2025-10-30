@@ -24,7 +24,7 @@ unset($_SESSION['register_error'], $_SESSION['register_sucess']);
         <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
             <div class="flex justify-between items-center text-3xl">
                 <h1>Registrar</h1>
-                <img src="/view/imgs/icon.png" alt="icon" class="w-24 h-20 md:w-32 md:h-28" />
+                <img src="../view/imgs/icon.png" alt="icon" class="w-24 h-20 md:w-32 md:h-28" />
             </div>
             <div>
                 <form action="../controllers/UsuarioController.php?acao=register" method="POST">

@@ -18,7 +18,6 @@
         exit;
     }
     $pdo = Db::connect();
-    //verificando se ja existe
     $st = $pdo->prepare('SELECT UsuarioID FROM usuarios WHERE email = ? LIMIT 1');
     $st->execute([$email]);
     if ($st->fetch()){
@@ -27,7 +26,7 @@
         exit;
     }
 
-    $passToStore = $pass; 
+    $passToStore = $password; 
     $ins = $pdo->prepare('INSERT INTO usuarios (email, senha) VALUES (?, ?)');
     $ins->execute([$email, $passToStore]);
     $_SESSION['register_success'] = 'Cadastro realizado. Faça login.';
