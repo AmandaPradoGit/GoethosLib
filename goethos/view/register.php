@@ -27,7 +27,7 @@ unset($_SESSION['register_error'], $_SESSION['register_sucess']);
                 <img src="../view/imgs/icon.png" alt="icon" class="w-24 h-20 md:w-32 md:h-28" />
             </div>
             <div>
-                <form action="../controllers/UsuarioController.php?acao=register" method="POST">
+                <form action="../controllers/UserController.php?acao=register" method="POST">
                     <label for="name" class="block mb-2 text-sm font-medium">Nome:</label>
                     <input type="text" name="name" class="w-full px-4 py-2 mb-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-yellow-400"/>
                     <label for="email" class="block mb-2 text-sm font-medium">E-mail:</label>

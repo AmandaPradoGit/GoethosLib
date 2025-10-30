@@ -14,9 +14,16 @@ class User {
         return $stmt->execute([
             $name,
             $email,
-            $password,
-            $registerDate
+            $password
         ]);
+    }
+    public static function verifyEmail($email){
+        $pdo = Db::connect();
+
+        $sql= "SELECT UsuarioID FROM usuarios WHERE Email=? LIMIT 1";
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute([$email]);
+        return $stmt->fetch() !== false;
     }
 }
 ?>
