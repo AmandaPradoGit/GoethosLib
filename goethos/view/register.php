@@ -36,13 +36,12 @@ unset($_SESSION['register_error'], $_SESSION['register_sucess']);
                     <input type="password" name="password" class="w-full px-4 py-2 mb-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-yellow-400"/>
                     <label for="password" class="block mb-2 text-sm font-medium">Corfimar Senha:</label>
                     <input type="password" name="passConfirm" class="w-full px-4 py-2 mb-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-yellow-400"/>
-                    <button type="submit" class="w-full bg-black hover:bg-yellow-500 text-white font-bold py-2 px-4 rounded transition duration-300"
-                    onclick="window.location.href='home.html'">Registrar</button>
+                    <button type="submit" class="w-full bg-black hover:bg-yellow-500 text-white font-bold py-2 px-4 rounded transition duration-300">Registrar</button>
                 </form>
             </div>
                 
             <div class="flex items-center justify-between mt-6 ">
-                <a href="login.html" class="block underline text-sm">Já possuo uma conta</a>
+                <a href="login.php" class="block underline text-sm">Já possuo uma conta</a>
             </div>
             </div>    
         </div>
