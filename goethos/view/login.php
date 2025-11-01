@@ -25,6 +25,10 @@ session_start();
             </div>
             <div>
                 <form action="../controllers/LoginController.php" method="POST">
+                    <?php if(!empty($_SESSION['login_error'])): ?>
+                        <p class="text-red-500 text-sm mb-4"><?= $_SESSION['login_error']; unset($_SESSION['login_error']); ?></p>
+                    <?php endif; ?>
+
                 <label for="email" class="block mb-2 text-sm font-medium">E-mail:</label>
                 <input name="email" type="text" class="w-full px-4 py-2 mb-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-yellow-400"/>
                 <label for="password" class="block mb-2 text-sm font-medium">Senha:</label>

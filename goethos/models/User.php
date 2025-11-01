@@ -8,13 +8,14 @@ class User {
 
     public static function registerUser($name, $email, $password, $registerDate){
         $pdo = Db::connect();
+        $hashed = password_hash($password, PASSWORD_DEFAULT);
         
         $sql = "INSERT INTO usuarios (Nome, Email, Senha, DataCadastro) VALUES (?,?,?, NOW())";
         $stmt = $pdo->prepare($sql);
         return $stmt->execute([
             $name,
             $email,
-            $password
+            $hashed
         ]);
     }
     public static function verifyEmail($email){
