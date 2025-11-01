@@ -13,7 +13,7 @@ unset($_SESSION['register_error'], $_SESSION['register_sucess']);
     <div class="fixed top-0 left-0 w-full z-50 font-mono p-4 md:p-6 shadow-md bg-white">
     <div class="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
       <div class="flex items-center space-x-4">
-        <img src="/view/imgs/icon.png" alt="icon" class="w-12 h-10 md:w-16 md:h-12 rounded-full" />
+        <img src="../view/imgs/icon.png" alt="icon" class="w-12 h-10 md:w-16 md:h-12 rounded-full" />
         <h1 class="text-xl md:text-2xl font-light">Goethos</h1>
       </div>
     </div>

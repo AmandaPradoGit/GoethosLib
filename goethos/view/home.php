@@ -10,5 +10,5 @@ session_start();
         <div class="flex items-end justify-start h-72 bg-gray-100">
             <h1 class="text-3xl px-16 py-6">Minha Estante</h1>
         </div>
-        <script type="module" src="/view/components/main.js"></script>
+        <script type="module" src="../view/components/main.js"></script>
     </body>

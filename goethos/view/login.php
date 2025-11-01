@@ -10,7 +10,7 @@ session_start();
     <div class="fixed top-0 left-0 w-full z-50 font-mono p-4 md:p-6 shadow-md bg-white">
     <div class="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
       <div class="flex items-center space-x-4">
-        <img src="/view/imgs/icon.png" alt="icon" class="w-12 h-10 md:w-16 md:h-12 rounded-full" />
+        <img src="../view/imgs/icon.png" alt="icon" class="w-12 h-10 md:w-16 md:h-12 rounded-full" />
         <h1 class="text-xl md:text-2xl font-light">Goethos</h1>
       </div>
     </div>
@@ -21,7 +21,7 @@ session_start();
         <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
             <div class="flex justify-between items-center text-3xl">
                 <h1>Entrar</h1>
-                <img src="/view/imgs/icon.png" alt="icon" class="w-24 h-20 md:w-32 md:h-28" />
+                <img src="../view/imgs/icon.png" alt="icon" class="w-24 h-20 md:w-32 md:h-28" />
             </div>
             <div>
                 <form action="../controllers/LoginController.php" method="POST">
