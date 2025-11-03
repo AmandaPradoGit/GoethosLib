@@ -31,7 +31,7 @@ header.innerHTML = `
   if (profilePic) {
     profilePic.style.cursor = 'pointer'; 
     profilePic.addEventListener('click', () => {
-      window.location.href = 'profile.html';
+      window.location.href = 'profile.php';
     });
   }
 
@@ -39,14 +39,14 @@ header.innerHTML = `
   if (icon) {
     icon.style.cursor = 'pointer';
     icon.addEventListener('click', () => {
-      window.location.href = 'home.html';
+      window.location.href = 'home.php';
     });
   }
   const search = header.querySelector('img[alt="search icon"]');
   if (icon) {
     search.style.cursor = 'pointer';
     search.addEventListener('click', () => {
-      window.location.href = 'search.html';
+      window.location.href = 'search.php';
     });
   }
 });

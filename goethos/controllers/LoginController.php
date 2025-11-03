@@ -14,9 +14,11 @@ require_once __DIR__ . '/../models/User.php';
     $user = User::authUser($email, $password);
 
     if ($user) {
-        $_SESSION['user_id'] = $user['ID'];
+        $_SESSION['user_id'] = $user['UsuarioID'];
         $_SESSION['user_name'] = $user['Nome'];
-        header('Location: ../view/home.php');
+        
+        $return = $_GET['return'] ?? 'home.php';
+        header("Location: ../view/$return");
         exit;
     } else {
         $_SESSION['login_error'] = "E-mail ou senha incorretos.";

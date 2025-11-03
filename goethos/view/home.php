@@ -1,5 +1,13 @@
 <?php 
 session_start();
+if(empty($_SESSION['user_id'])){
+    header('Location: login.php?return=home.php');
+    exit;
+}
+
+$user_id = $_SESSION['user_id'];
+$user_name = $_SESSION['user_name'];
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
