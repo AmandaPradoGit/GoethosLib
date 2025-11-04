@@ -1,5 +1,7 @@
 <?php 
 session_start();
+require_once __DIR__ . "/../services/BooksAPI.php";
+
 if(empty($_SESSION['user_id'])){
     header('Location: login.php?return=home.php');
     exit;
@@ -7,6 +9,16 @@ if(empty($_SESSION['user_id'])){
 
 $user_id = $_SESSION['user_id'];
 $user_name = $_SESSION['user_name'];
+
+if(isset($_GET['q']) && $_GET['q'] !==''){
+    $pesquisou = true;
+    $query = $_GET['q'];
+
+$apiKey = "AIzaSyByAyHnHN-0H4H-N7CBFrwNPfz_twnFpH0";
+$api = new BooksAPI($apiKey);
+
+$books = $api->search($query);
+}
 
 ?>
 <!DOCTYPE html>
