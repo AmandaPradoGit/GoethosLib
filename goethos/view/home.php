@@ -20,4 +20,3 @@ $user_name = $_SESSION['user_name'];
         </div>
         <script type="module" src="../view/components/main.js"></script>
     </body>
-</htm>
